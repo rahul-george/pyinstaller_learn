@@ -5,3 +5,10 @@
 *.pyo
 case_manipulator/dist
 case_manipulator/build
+lowerise/lowerise/__hooks/__pycache__
+lowerise/lowerise/__pycache__
+case_manipulator/build
+case_manipulator/build/*
+case_manipulator/dist
+case_manipulator/dist/*
+
