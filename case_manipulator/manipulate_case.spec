@@ -4,11 +4,11 @@ block_cipher = None
 
 
 a = Analysis(['case_manipulator\\case_manipulator.py'],
-             pathex=['..\\lowerise', '..\\capitalize', '.'],
+             pathex=['..\\lowerise', '..\\capitalize', '.\\case_manipulator', '.'],
              binaries=[],
              datas=[],
              hiddenimports=['lowerise', 'capitalize'],
-             hookspath=['..\\lowerise\\lowerise\\__hooks'],
+             hookspath=['..\\lowerise\\lowerise\\__hooks', '.\\case_manipulator\\__hooks'],
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
@@ -19,7 +19,7 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          [('v', None, 'OPTION')],
+          [],
           exclude_binaries=True,
           name='manipulate_case',
           debug=False,

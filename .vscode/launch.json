@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["--lower", "Rahul"]
+            "args": ["--count-vowels", "Rahul"]
         },
         {
             "name": "Python: Current File",
