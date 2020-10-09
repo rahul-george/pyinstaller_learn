@@ -1,2 +1,0 @@
-('c:\\Users\\Temp\\Work\\Temporary\\scratch_area\\case_manipulator\\build\\manipulate_case\\PYZ-00.pyz',
- [])
