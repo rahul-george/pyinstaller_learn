@@ -25,5 +25,5 @@ if __name__ == "__main__":
             print(count_vowels.CountVowels(sys.argv[2]))
         else:
             sys.exit(-1)
-    else:
+    else:  
         sys.exit(-1)

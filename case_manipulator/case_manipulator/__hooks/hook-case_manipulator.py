@@ -9,5 +9,7 @@ for pkg in packages_for_hidden_import:
     print("Hidden modules from case_manipulator: {}".format(",".join(h_mods)))
     _hiddenimports.extend(h_mods)
 
-
 hiddenimports = _hiddenimports
+_datas = collect_data_files('case_manipulator.config_files')
+print("DATA FILES: {}".format(_datas))
+datas = _datas

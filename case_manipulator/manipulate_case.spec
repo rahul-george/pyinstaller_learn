@@ -2,11 +2,13 @@
 
 block_cipher = None
 
+_datas = [(".\\case_manipulator\\config_files\\*", ".\\config_files")]
+
 
 a = Analysis(['case_manipulator\\case_manipulator.py'],
              pathex=['..\\lowerise', '..\\capitalize', '.\\case_manipulator', '.'],
              binaries=[],
-             datas=[],
+             datas=_datas,
              hiddenimports=['lowerise', 'capitalize'],
              hookspath=['..\\lowerise\\lowerise\\__hooks', '.\\case_manipulator\\__hooks'],
              runtime_hooks=[],
@@ -35,3 +37,11 @@ coll = COLLECT(exe,
                upx=False,
                upx_exclude=[],
                name='manipulate_case')
+
+
+dist_path = "{}\manipulate_case".format(DISTPATH)
+print("************* POST BUILD ACTIONS ************")
+
+#import shutil
+#shutil.copy(dist_path + "\\config_files", dist_path + "\\..\\config_files")
+
